@@ -15,16 +15,32 @@ namespace Committee_app_final
     [Activity(Label = "@string/Committee1")]
     public class Committee1Window : ListActivity
     {
+        //a list of the diferent options of the Screen
+        String[] optionList;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Create your application here
-            //var phoneNumbers = Intent.Extras.GetStringArrayList("phone_numbers") ?? new string[0];
-            //this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, phoneNumbers);
+            
+            //button for going back to the previous screen
             Button backButton = new Button(this);
+            
+            //button text
             backButton.Text = "Back";
-            var intent = new Intent(this, typeof(MainActivity));
-            StartActivity(intent);
+            
+            //initializing list with options
+            optionList = new String[] {"Descripción","Miembros Activos","Miembros Antiguos","Proyectos Pasados", "Proyectos Actuales"};
+            
+            //Component of the actual activity, UI to show the previous list
+            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, optionList);
+            
+            //Button method for going back
+            backButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(MainActivity));
+                StartActivity(intent);
+            };
         }
     }
 }
