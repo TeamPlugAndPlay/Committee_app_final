@@ -6,7 +6,7 @@ using Android.Content;
 
 namespace Committee_app_final
 {
-    [Activity(Label = "Committee_app_final", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "El Bosque Committee App", MainLauncher = true, Icon = "@drawable/logo_bosque")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
