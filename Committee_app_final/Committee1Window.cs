@@ -21,6 +21,10 @@ namespace Committee_app_final
             // Create your application here
             //var phoneNumbers = Intent.Extras.GetStringArrayList("phone_numbers") ?? new string[0];
             //this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, phoneNumbers);
+            Button backButton = new Button(this);
+            backButton.Text = "Back";
+            var intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
         }
     }
 }
