@@ -42,5 +42,12 @@ namespace Committee_app_final
                 StartActivity(intent);
             };
         }
+        protected override void OnListItemClick(ListView l, View v, int position, long id)
+        {
+            var t = optionList[position];
+            String[] aux = new String[] { t.ToString() };
+            this.ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, aux);
+            //Android.Widget.Toast.MakeText(this, t, Android.Widget.ToastLength.Short).Show();
+        }
     }
 }
