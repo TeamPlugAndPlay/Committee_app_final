@@ -66,6 +66,21 @@ namespace Committee_app_final
 			// aapt resource value: 0x7f050001
 			public const int buttonCommittee1 = 2131034113;
 			
+			// aapt resource value: 0x7f050002
+			public const int buttonCommittee2 = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int buttonCommittee3 = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int buttonCommittee4 = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int buttonCommittee5 = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int buttonCommittee6 = 2131034118;
+			
 			// aapt resource value: 0x7f050000
 			public const int mainText = 2131034112;
 			
@@ -98,11 +113,38 @@ namespace Committee_app_final
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f04000a
+			public const int ApplicationName = 2130968586;
 			
 			// aapt resource value: 0x7f040000
 			public const int Committee1 = 2130968576;
+			
+			// aapt resource value: 0x7f040009
+			public const int Committee10 = 2130968585;
+			
+			// aapt resource value: 0x7f040001
+			public const int Committee2 = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int Committee3 = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int Committee4 = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int Committee5 = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int Committee6 = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int Committee7 = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int Committee8 = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int Committee9 = 2130968584;
 			
 			static String()
 			{

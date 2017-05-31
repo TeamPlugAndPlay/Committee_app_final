@@ -14,4 +14,29 @@
         android:layout_width="match_parent"
         android:layout_height="72.5dp"
         android:id="@+id/buttonCommittee1" />
+    <Button
+        android:text="@string/Committee2"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonCommittee2" />
+    <Button
+        android:text="@string/Committee3"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonCommittee3" />
+    <Button
+        android:text="@string/Committee4"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonCommittee4" />
+    <Button
+        android:text="@string/Committee5"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonCommittee5" />
+    <Button
+        android:text="@string/Committee6"
+        android:layout_width="match_parent"
+        android:layout_height="72.5dp"
+        android:id="@+id/buttonCommittee6" />
 </LinearLayout>

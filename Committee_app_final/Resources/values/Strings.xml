@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Committee1">Committee1</string>
+    <string name="Committee2">Committee2</string>
+    <string name="Committee3">Committee3</string>
+    <string name="Committee4">Committee4</string>
+    <string name="Committee5">Committee5</string>
+    <string name="Committee6">Committee6</string>
+    <string name="Committee7">Committee7</string>
+    <string name="Committee8">Committee8</string>
+    <string name="Committee9">Committee9</string>
+    <string name="Committee10">Committee10</string>
     <string name="ApplicationName">Committee App</string>
 </resources>
