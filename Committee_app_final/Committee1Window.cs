@@ -22,15 +22,19 @@ namespace Committee_app_final
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            optionsMapping = new Dictionary<string, string[]>();
             // Create your application here
+            SetContentView(Resource.Layout.Committee1Layout);
+
+            ImageView image = FindViewById<ImageView>(Resource.Id.imageView1);
+
+            optionsMapping = new Dictionary<string, string[]>();
+
+            //initializing list with options
+            optionList = new String[] {"Descripción","Miembros Activos","Miembros Antiguos","Proyectos Pasados", "Proyectos Actuales"};
 
             //call method populateList to fill the data needed on the dictionary
             PopulateList();
 
-            //initializing list with options
-            optionList = new String[] {"Descripción","Miembros Activos","Miembros Antiguos","Proyectos Pasados", "Proyectos Actuales"};
-            
             //Component of the actual activity, UI to show the previous list
             this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleExpandableListItem1, optionList);
 
