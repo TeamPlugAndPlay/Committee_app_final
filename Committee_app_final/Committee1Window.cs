@@ -23,7 +23,7 @@ namespace Committee_app_final
         {
             base.OnCreate(savedInstanceState);
             // Create your application here
-            SetContentView(Resource.Layout.Committee1Layout);
+            //SetContentView(Resource.Layout.Committee1Layout);
 
             ImageView image = FindViewById<ImageView>(Resource.Id.imageView1);
 
