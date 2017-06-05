@@ -12,61 +12,72 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:text="Committee Information App"
+                android:text="Committees Information App"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="match_parent"
+                android:layout_width="379.0dp"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:id="@+id/mainText" />
             <Button
                 android:text="@string/Committee1"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee1" />
+                android:id="@+id/buttonCommittee1"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee2"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee2" />
+                android:id="@+id/buttonCommittee2"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee3"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee3" />
+                android:id="@+id/buttonCommittee3"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee4"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee4" />
+                android:id="@+id/buttonCommittee4"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee5"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee5" />
+                android:id="@+id/buttonCommittee5"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee6"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee6" />
+                android:id="@+id/buttonCommittee6"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee7"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee7" />
+                android:id="@+id/buttonCommittee7"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee8"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee8" />
+                android:id="@+id/buttonCommittee8"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee9"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee9" />
+                android:id="@+id/buttonCommittee9"
+                android:layout_marginLeft="0.0dp" />
             <Button
                 android:text="@string/Committee10"
                 android:layout_width="match_parent"
                 android:layout_height="72.5dp"
-                android:id="@+id/buttonCommittee10" />
+                android:id="@+id/buttonCommittee10"
+                android:layout_marginLeft="0.0dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -18,15 +18,79 @@ namespace Committee_app_final
         //a list of the diferent options of the Screen
         String[] optionList;
         Dictionary<string, String[]> optionsMapping;
+        ImageView image;
+        TextView committeeName;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.Committee1Layout);
+            string text = Intent.GetStringExtra("committee") ?? "Data not available";
+            committeeName = FindViewById<TextView>(Resource.Id.textView1);
 
-            ImageView image = new ImageView(this);
-            image.SetImageResource(Resource.Drawable.logo_bosque);
+            //if and el if for asigning the committee title, main image and banner
+            if (text.Equals("committee1"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_calidad_circle);
+                committeeName.Text=("Calidad");
+
+            }
+            else if (text.Equals("committee2"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee3"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee4"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee5"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee6"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee7"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee8"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee9"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
+            else if (text.Equals("committee10"))
+            {
+                image = FindViewById<ImageView>(Resource.Id.imageView1);
+                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
+                committeeName.Text = ("Comunicaciones");
+            }
 
             optionsMapping = new Dictionary<string, string[]>();
 

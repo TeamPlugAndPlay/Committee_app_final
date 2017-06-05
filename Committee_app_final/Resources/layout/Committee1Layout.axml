@@ -13,9 +13,31 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1">
         <ImageView
-            android:src="@drawable/logo_bosque"
+            android:src="@drawable/icon_calidad_circle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imageView1" />
+        <TextView
+            android:text="First Committee"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/textView1"
+            android:layout_marginLeft="0.0dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3" />
     </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2" />
 </LinearLayout>
