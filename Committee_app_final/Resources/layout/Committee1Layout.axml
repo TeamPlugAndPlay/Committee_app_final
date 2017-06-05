@@ -5,9 +5,17 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <ImageView
-        android:src="@drawable/logo_bosque"
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView1" />
+        android:id="@+id/linearLayout1">
+        <ImageView
+            android:src="@drawable/logo_bosque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
 </LinearLayout>

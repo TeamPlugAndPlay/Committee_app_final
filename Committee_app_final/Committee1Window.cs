@@ -13,7 +13,7 @@ using Android.Widget;
 namespace Committee_app_final
 {
     [Activity(Label = "@string/Committee1")]
-    public class Committee1Window : ListActivity
+    public class Committee1Window : Activity
     {
         //a list of the diferent options of the Screen
         String[] optionList;
@@ -23,9 +23,10 @@ namespace Committee_app_final
         {
             base.OnCreate(savedInstanceState);
             // Create your application here
-            //SetContentView(Resource.Layout.Committee1Layout);
+            SetContentView(Resource.Layout.Committee1Layout);
 
-            ImageView image = FindViewById<ImageView>(Resource.Id.imageView1);
+            ImageView image = new ImageView(this);
+            image.SetImageResource(Resource.Drawable.logo_bosque);
 
             optionsMapping = new Dictionary<string, string[]>();
 
@@ -35,18 +36,6 @@ namespace Committee_app_final
             //call method populateList to fill the data needed on the dictionary
             PopulateList();
 
-            //Component of the actual activity, UI to show the previous list
-            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleExpandableListItem1, optionList);
-
-
-        }
-        //method for clicking the list adapter options and showing the option selected at the bottom of the Screen
-        protected override void OnListItemClick(ListView l, View v, int position, long id)
-        {
-            var t = optionList[position];
-            /*String[] aux = new String[] { t.ToString() };
-            this.ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, aux);*/
-            Android.Widget.Toast.MakeText(this, t, Android.Widget.ToastLength.Short).Show();
         }
 
         public void PopulateList()

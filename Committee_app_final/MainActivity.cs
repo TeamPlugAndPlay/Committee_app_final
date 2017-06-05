@@ -20,7 +20,7 @@ namespace Committee_app_final
             button1.Click += (sender, e) =>
              {
                  var intent = new Intent(this, typeof(Committee1Window));
-                 //intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
+                 //intent.PutStringArrayListExtra("phone_numbers", phoneNumbers); //for sending some extra data to the new activity
                  StartActivity(intent);
              };
         }
