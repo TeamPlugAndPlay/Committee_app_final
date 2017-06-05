@@ -46,50 +46,50 @@ namespace Committee_app_final
             else if (text.Equals("committee3"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_internacionalizacion_circle);
+                committeeName.Text = ("Internacionalización");
             }
             else if (text.Equals("committee4"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_curricular_circle);
+                committeeName.Text = ("Curricular");
             }
             else if (text.Equals("committee5"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_rsu_circle);//falta
+                committeeName.Text = ("Responsabilidad Social");
             }
             else if (text.Equals("committee6"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_egresados_circle);
+                committeeName.Text = ("Egresados");
             }
             else if (text.Equals("committee7"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_continuada_circle);
+                committeeName.Text = ("Educación Continuada");
             }
             else if (text.Equals("committee8"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_investigacion_circle);
+                committeeName.Text = ("Investigaciones");
             }
             else if (text.Equals("committee9"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_externo_circle);
+                committeeName.Text = ("Prácticas Empresariales");
             }
             else if (text.Equals("committee10"))
             {
                 image = FindViewById<ImageView>(Resource.Id.imageView1);
-                image.SetImageResource(Resource.Drawable.icon_comunicaciones_circle);
-                committeeName.Text = ("Comunicaciones");
+                image.SetImageResource(Resource.Drawable.icon_exito_circle);
+                committeeName.Text = ("Éxito Estudiantil");
             }
 
             optionsMapping = new Dictionary<string, string[]>();
