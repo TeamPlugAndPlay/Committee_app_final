@@ -83,6 +83,9 @@ namespace Committee_app_final
 			// aapt resource value: 0x7f02000c
 			public const int logo_bosque = 2130837516;
 			
+			// aapt resource value: 0x7f02000d
+			public const int todos_los_iconos = 2130837517;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
