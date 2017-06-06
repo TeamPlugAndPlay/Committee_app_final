@@ -13,7 +13,7 @@ using Android.Graphics;
 
 namespace Committee_app_final
 {
-    [Activity(Label = "@string/Committee1")]
+    [Activity(Label = "Comite")]
     public class Committee1Window : Activity
     {
         //a list of the diferent options of the Screen
