@@ -16,20 +16,28 @@ namespace Committee_app_final
     public class Committee1Window : Activity
     {
         //a list of the diferent options of the Screen
-        String[] optionList;
-        Dictionary<string, String[]> optionsMapping;
+        List<string> optionList;
+        ExpandableListAdapter listAdapter;
+        ExpandableListView listView;
+        Dictionary<string, List<string>> optionsMapping;
         ImageView image;
         TextView committeeName;
-        //ExpandableListAdapter listAdapter;
-        ExpandableListView expandableList;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Create your application here
             SetContentView(Resource.Layout.Committee1Layout);
+            listView = FindViewById<ExpandableListView>(Resource.Id.lvExp);
             string text = Intent.GetStringExtra("committee") ?? "Data not available";
             committeeName = FindViewById<TextView>(Resource.Id.textView1);
+
+            //call method populateList to fill the data needed on the dictionary
+            optionsMapping = new Dictionary<string, List<string>>();
+            PopulateList();
+
+            listAdapter = new ExpandableListAdapter(this, optionList, optionsMapping);
+            listView.SetAdapter(listAdapter);
 
             //if and el if for asigning the committee title, main image and banner
             if (text.Equals("committee1"))
@@ -94,26 +102,34 @@ namespace Committee_app_final
                 committeeName.Text = ("Éxito Estudiantil");
             }
 
-            optionsMapping = new Dictionary<string, string[]>();
-
-            //initializing list with options
-            optionList = new String[] {"Descripción","Miembros Activos","Miembros Antiguos","Proyectos Pasados", "Proyectos Actuales"};
-
-            //call method populateList to fill the data needed on the dictionary
-            PopulateList();
-
+            
         }
 
         public void PopulateList()
         {
             //data that will be contained on each option of the expendable list
-            
-            expandableList = FindViewById<ExpandableListView>(Resource.Id.expandableList);
-            String[] descriptionText = new String[] { "apply RESTful Service" };
-            String[] membersList = new String[] { "member1", "member2", "member3" };
-            String[] oldMembersList = new String[] { "oldMember1", "oldMember2", "oldMember3" };
-            String[] proyectsDone = new String[] { "apply another service here" };
-            String[] proyectsDoing = new String[] { "apply yet another service" };
+            //initializing list with options
+            optionList = new List<string>();
+            optionList.Add("Descripción");
+            optionList.Add("Miembros Activos");
+            optionList.Add("Miembros Antiguos");
+            optionList.Add("Proyectos Pasados");
+            optionList.Add("Proyectos Actuales");
+
+            List<string> descriptionText = new List<string>();
+            descriptionText.Add( "apply RESTful Service" );
+            List<string> membersList = new List<string>();
+            membersList.Add("member1");
+            membersList.Add("member2");
+            membersList.Add("member3");
+            List<string> oldMembersList = new List<string>();
+            oldMembersList.Add("oldMember1");
+            oldMembersList.Add("oldMember2");
+            oldMembersList.Add("oldMember3");
+            List<string> proyectsDone = new List<string> ();
+            proyectsDone.Add("apply another service here");
+            List<string> proyectsDoing = new List<string> ();
+            proyectsDoing.Add("apply yet another service");
 
             //fill the dictionary with the options and its data
             optionsMapping.Add(optionList[0], descriptionText);
