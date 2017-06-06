@@ -20,6 +20,8 @@ namespace Committee_app_final
         Dictionary<string, String[]> optionsMapping;
         ImageView image;
         TextView committeeName;
+        //ExpandableListAdapter listAdapter;
+        ExpandableListView expandableList;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -105,6 +107,8 @@ namespace Committee_app_final
         public void PopulateList()
         {
             //data that will be contained on each option of the expendable list
+            
+            expandableList = FindViewById<ExpandableListView>(Resource.Id.expandableList);
             String[] descriptionText = new String[] { "apply RESTful Service" };
             String[] membersList = new String[] { "member1", "member2", "member3" };
             String[] oldMembersList = new String[] { "oldMember1", "oldMember2", "oldMember3" };
@@ -117,6 +121,7 @@ namespace Committee_app_final
             optionsMapping.Add(optionList[2], oldMembersList);
             optionsMapping.Add(optionList[3], proyectsDone);
             optionsMapping.Add(optionList[4], proyectsDoing);
+            //listAdapter = new SimpleExpandableListAdapter(this, optionList, optionsMapping);
         }
     }
 }
