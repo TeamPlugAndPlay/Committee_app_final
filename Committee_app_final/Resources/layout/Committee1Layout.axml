@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b7df4c"
     android:minWidth="25px"
     android:minHeight="25px">
     <LinearLayout
@@ -16,6 +17,7 @@
             android:src="@drawable/icon_calidad_circle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="2.0dp"
             android:id="@+id/imageView1" />
         <TextView
             android:text="First Committee"
@@ -23,8 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:id="@+id/textView1"
-            android:layout_marginLeft="0.0dp" />
+            android:textColor="#546721"
+            android:id="@+id/textView1" />
         <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
@@ -38,13 +40,14 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
         android:id="@+id/linearLayout2">
-      <ExpandableListView
-          android:id="@+id/lvExp"
-          android:layout_height="match_parent"
-          android:layout_width="match_parent"
-          android:background="#c6c6c6"
-          android:layout_margin="5dp" />
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_margin="5dp" />
     </LinearLayout>
 </LinearLayout>
